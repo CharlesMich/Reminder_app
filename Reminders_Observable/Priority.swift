@@ -28,7 +28,7 @@ enum Priority: String, CaseIterable, CustomStringConvertible {
         }
     }
     
-    static let allDescriptions = Self.allCases.map { $0.description}
+    static let allDescriptions = Self.allCases.map { $0.description }
 }
 
 
