@@ -9,9 +9,11 @@ import SwiftUI
 
 @main
 struct Reminders_ObservableApp: App {
+    @State private var storage = Storage(reminders: Reminder.samples)
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ReminderListView()
+                .environment(\.storage, storage)
         }
     }
 }
